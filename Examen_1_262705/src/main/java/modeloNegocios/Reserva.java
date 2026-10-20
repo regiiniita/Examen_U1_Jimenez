@@ -22,13 +22,11 @@ public class Reserva {
     public Reserva() {
     }
 
-    public Reserva(LocalDate fechaEntrada, LocalDate fechaSalida, int numHuespedes, double importeTotal, Cliente cliente, Habitacion habitacion) {
+    public Reserva(Habitacion habitacion, LocalDate fechaEntrada, LocalDate fechaSalida, int numHuespedes) {
+        this.habitacion = habitacion;
         this.fechaEntrada = fechaEntrada;
         this.fechaSalida = fechaSalida;
         this.numHuespedes = numHuespedes;
-        this.importeTotal = importeTotal;
-        this.cliente = cliente;
-        this.habitacion = habitacion;
     }
     
     public long calcularNumeroNoches() {
