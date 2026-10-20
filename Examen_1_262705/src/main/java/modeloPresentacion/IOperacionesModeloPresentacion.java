@@ -9,5 +9,15 @@ package modeloPresentacion;
  * @author regin
  */
 public interface IOperacionesModeloPresentacion {
-    
+    void agregarObservador(IObservadorReservas observador);
+
+    void buscarHabitacionesDisponibles(LocalDate entrada, LocalDate salida, int huespedes);
+
+    void seleccionarHabitacion(int numero);
+
+    void buscarClientes(String criterio);
+
+    void seleccionarCliente(String id);
+
+    void confirmarReservacion();
 }
