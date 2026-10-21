@@ -12,9 +12,6 @@ import modeloPresentacion.IOperacionesModeloPresentacion;
 import vista.FrmGestionReservas;
 
 /**
- * Crea las capas del MVC y las conecta.
- * Es la única clase que conoce las implementaciones concretas;
- * las demás solo se conocen por sus interfaces.
  *
  * @author regin
  */
