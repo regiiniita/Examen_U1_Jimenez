@@ -4,6 +4,9 @@
 
 package com.mycompany.examen_1_262705;
 
+import ensamblador.Ensamblador;
+import javax.swing.SwingUtilities;
+
 /**
  *
  * @author regin
@@ -11,6 +14,6 @@ package com.mycompany.examen_1_262705;
 public class Examen_1_262705 {
 
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+        SwingUtilities.invokeLater(() -> new Ensamblador().ensamblar().setVisible(true));
     }
 }
